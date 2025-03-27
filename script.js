@@ -35,7 +35,7 @@ function playGame(user) {
   } else {
     result_ans = "Invalid...";
   }
-  result.innerHTML = `${result_ans} Round = ${round}/10`;
+  result.innerHTML = `${result_ans} : Round = ${round+1}/10`;
   document.getElementsByClassName("point")[0].innerHTML = `Point = ${point}/10`;
   if (round == 10){
     result.innerHTML= "Game Over... refresh to play again...";

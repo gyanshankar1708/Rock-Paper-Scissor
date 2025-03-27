@@ -28,6 +28,26 @@
         .point{
             font-size: 20px;
         }
+        .container img:hover{
+            transform: scale(1.1);
+        }
+        @media (max-width:768px) {
+            .container img{
+                width: 100px;
+            }
+            .text{
+                font-size: 20px;
+            }
+        }
+        @media (max-width:450px){
+            .container{
+                display: flex;
+                flex-direction: column;
+            }
+            .text{
+                font-size: 20px;
+            }
+        }
         
     </style>
 </head>

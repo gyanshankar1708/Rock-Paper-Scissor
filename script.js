@@ -18,24 +18,24 @@ function playGame(user) {
   if (user == com) {
     result_ans = "Tie...";
   } else if (user == 1 && com == 2) {
-    result_ans = "You Lost...";
+    result_ans = "Computer -> Paper, You Lost...";
   } else if (user == 1 && com == 3) {
-    result_ans = "You Won...";
+    result_ans = "Computer -> Scissor, You Won...";
     point++;
   } else if (user == 2 && com == 1) {
-    result_ans = "You Won...";
+    result_ans = "Computer -> Rock, You Won...";
     point++;
   } else if (user == 2 && com == 3) {
-    result_ans = "You Lost...";
+    result_ans = "Computer -> Scissor, You Lost...";
   } else if (user == 3 && com == 1) {
-    result_ans = "You Lost...";
+    result_ans = "Computer -> Rock, You Lost...";
   } else if (user == 3 && com == 2) {
-    result_ans = "You Won...";
+    result_ans = "Computer -> Paper, You Won...";
     point++;
   } else {
     result_ans = "Invalid...";
   }
-  result.innerHTML = `${result_ans} : Round = ${round+1}/10`;
+  result.innerHTML = `<div>${result_ans}</div><div> Round = ${round+1}/10</div>`;
   document.getElementsByClassName("point")[0].innerHTML = `Point = ${point}/10`;
   if (round == 10){
     result.innerHTML= "Game Over... refresh to play again...";
